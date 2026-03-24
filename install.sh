@@ -3,12 +3,12 @@ INSTALL_DIR="$HOME/.local/bin"
 mkdir -p "$INSTALL_DIR"
 
 # Download JAR
-curl -fsSL https://github.com/TengMengHouy/shell-cli/releases/download/v1.0.0/spring-shell-demo-0.0.1-SNAPSHOT.jar -o "$INSTALL_DIR/shell-cli.jar"
+curl -fsSL https://github.com/TengMengHouy/shell-cli/releases/download/1.0.1/spring-shell-demo-0.0.1-SNAPSHOT.jar -o "$INSTALL_DIR/shell-cli.jar"
 
 # Create wrapper
 cat > "$INSTALL_DIR/shell-cli" << 'EOF'
 #!/bin/bash
-java -jar "$HOME/.local/bin/shell-cli.jar" "$@"
+java --enable-native-access=ALL-UNNAMED -jar "$HOME/.local/bin/shell-cli.jar" "$@"
 EOF
 
 chmod +x "$INSTALL_DIR/shell-cli"
