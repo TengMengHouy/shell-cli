@@ -1,6 +1,6 @@
 ### shell-cli
 
-A Spring Shell CLI application. Built with Spring Boot 4.0.4 and Spring Shell 4.0.1.
+A Spring Shell CLI application. Built with Spring Boot 4.0.4 and Spring Shell 3.4.2.
 
 #### Features
 
