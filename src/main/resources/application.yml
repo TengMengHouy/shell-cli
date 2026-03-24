@@ -1,0 +1,13 @@
+spring:
+  application:
+   name: demo-shell
+  shell:
+    command:
+      script:
+        enabled: true
+      clear:
+        enabled: true
+    interactive:
+      enabled: true
+    help:
+      enabled: true
