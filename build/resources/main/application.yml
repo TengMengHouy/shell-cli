@@ -11,3 +11,12 @@ spring:
       enabled: true
     help:
       enabled: true
+  main:
+    banner-mode: "off"
+logging:
+  level:
+    root: WARN
+    org.springframework: ERROR
+    org.springframework.boot: ERROR
+    org.springframework.shell: INFO
+    org.jline: ERROR
